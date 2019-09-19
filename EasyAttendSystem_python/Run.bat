@@ -1,5 +1,5 @@
 :幾位學生
-set allStudentCount=67
+set allStudentCount=3
 :學號
 set allStudentID=AllStudentID
 :學生證卡號
@@ -11,7 +11,7 @@ del noAttendList.txt allNoAttendList.txt total.txt
 cd ..
 
 :讀檔以及將缺席名單輸出
-set attend=0328
+set attend=20190919
 python main.py %allStudentCount% %allStudentID% %allStudentCardID% %attend% >> result/noAttendList.txt
 python allNoAttendList.py %allStudentCount% %allStudentID% %allStudentCardID% %attend% >> result/allNoAttendList.txt
 
