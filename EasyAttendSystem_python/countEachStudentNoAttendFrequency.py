@@ -7,7 +7,7 @@ allStudent = []
 count = len(np.atleast_1d(allNoAttendList))
 
 if count == 1:
-    print(allNoAttendList)
+    print(allNoAttendList, "1")
 else:
     for i in range(len(np.atleast_1d(allNoAttendList))):
         flag = 0
