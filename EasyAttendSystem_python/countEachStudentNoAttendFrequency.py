@@ -5,7 +5,7 @@ allNoAttendList = np.loadtxt('result/allNoAttendList.txt', dtype=np.str, delimit
 
 allStudent = []
 
-for i in range(len(allNoAttendList)):
+for i in range(len(np.atleast_1d(allNoAttendList))):
     flag = 0
     if len(allStudent) == 0:
         allStudent.append([])
